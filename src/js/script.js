@@ -22,30 +22,58 @@
 
 //console.log(taxaJuros)
 
+// var ex1="Olá dev var";
+// console.log(ex1);
 
-var ex1="Olá dev var";
-console.log(ex1);
+// let ex2="Olá dev let";
+// console.log(ex2);
 
-let ex2="Olá dev let";
-console.log(ex2);
+// const ex3="Olá dev const";
+// console.log(typeof ex3);
 
-const ex3="Olá dev const";
-console.log(typeof ex3);
+// let ex4=20;
+// console.log(ex4);
 
-let ex4=20;
-console.log(ex4);
+// let ex5=true;
+// console.log(typeof ex4);
 
-let ex5=true;
-console.log(typeof ex4);
+// let ex6={nome: "Fiap"};
+// console.log(typeof ex6);
 
-let ex6={nome: "Fiap"};
-console.log(typeof ex6);
+// let ex7=["Java", "Python", "C"];
+// console.log(ex7);
 
-let ex7=["Java", "Python", "C"];
-console.log(ex7);
+// let ex8; // Declaração/ Variável indefinida
+// console.log(ex8);
 
-let ex8; // Declaração/ Variável indefinida
-console.log(ex8);
+// let ex9=null;
+// console.log(typeof ex9);
 
-let ex9=null;
-console.log(typeof ex9);
+// OPERADOS ARTIMÉTICOS
+
+// se coloca rum valor em string dentro de uma soma, vai mostrar o valor em string o o valor em int no lado um do outro
+
+const valor1=20;
+const valor2=10;
+
+console.log(valor1 + valor2);
+console.log(valor1 / valor2);
+console.log(valor1 - valor2);
+console.log(valor1 * valor2);
+
+
+// OPERADOS LÓGICOS
+console.log(valor1 > valor2);
+console.log(valor1 > 10 && valor2 !=20); //Os dois tem que ser verdadeiro para ser True
+console.log(valor2 < 5 || valor1 > 3); //um deles é verdadeiro para ser True
+
+// COMPARAÇÃO
+console.log(valor1 < valor2);
+console.log(valor1 >= valor2);
+console.log(valor1 <= valor2);
+console.log(valor1 != valor2);
+console.log(valor1 == valor2);
+console.log(valor1 === valor2);
+
+//CONCATENAÇÃO - texto para ser exibido ao lado da variável
+console.log("O valor é", valor2);
