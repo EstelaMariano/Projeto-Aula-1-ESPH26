@@ -49,7 +49,7 @@
 // let ex9=null;
 // console.log(typeof ex9);
 
-// OPERADOS ARTIMÉTICOS
+// OPERADOS ARTIMÉTICOS -------------------------------------------------------------
 
 // se coloca rum valor em string dentro de uma soma, vai mostrar o valor em string o o valor em int no lado um do outro
 
@@ -62,12 +62,12 @@
 // console.log(valor1 * valor2);
 
 
-// // OPERADOS LÓGICOS
+// // OPERADOS LÓGICOS -------------------------------------------------
 // console.log(valor1 > valor2);
 // console.log(valor1 > 10 && valor2 !=20); //Os dois tem que ser verdadeiro para ser True
 // console.log(valor2 < 5 || valor1 > 3); //um deles é verdadeiro para ser True
 
-// // COMPARAÇÃO
+// // COMPARAÇÃO ------------------------------------------------------
 // console.log(valor1 < valor2);
 // console.log(valor1 >= valor2);
 // console.log(valor1 <= valor2);
@@ -78,17 +78,79 @@
 // //CONCATENAÇÃO - texto para ser exibido ao lado da variável
 // console.log("O valor é", valor2);
 
-// Exercício
+// Exercício ----------------------------------------------------------
 // 1-
-const p = 50;
-const v = 35;
-const precoFinal = p - v;
-console.log("O preço final com desconto é", precoFinal);
+// const p = 50;
+// const v = 35;
+// const precoFinal = p - v;
+// console.log("O preço final com desconto é", precoFinal);
 
 //2-
-const usuarioLogado = 1;
-const token = 100;
-const autorizado = (usuarioLogado === 1) && (token >= 10);
-console.log("Trasação autorizada com sucesso!", autorizado)
+// const usuarioLogado = 1;
+// const token = 100;
+// const autorizado = (usuarioLogado === 1) && (token >= 10);
+// console.log("Trasação autorizada com sucesso!", autorizado)
 
-//3-
+// Estrutura Condicional ---------------------------------------
+
+if(true){
+    console.log("É verdadeiro");
+}
+
+// if/else
+
+let nome ="Fiap";
+if(nome == "Fiap"){
+    console.log("Nome verdadeiro")
+} else{
+    console.log("Nome Errado")
+}
+
+// if encadeado ou aninhado
+let idade = 18;
+
+if(idade <= 13){
+    console.log("É uma criança");
+} else if (idade > 13 && idade <=18){
+    console.log("É um adolescente");
+} else if (idade > 18 && idade <=59){
+    console.log("É um adulto");
+}else{
+    console.log("É um idoso");
+}
+
+// Switch-case
+let times = "Palme"
+
+switch(times){
+    case "Santos":
+        console.log("Um time idoso");
+        break;
+    case "São Paulo":
+        console.log("Time panetone");
+        break;
+    case "Palmeiras":
+        console.log("SEM MUNDIAL");
+        break;
+    case "Corinthians":
+        console.log("Um time de tradição");
+        break;
+    default:
+        console.log("é tão ruim quanto a seleção brasileira")
+}
+
+//ternaria
+
+let salario = 100;
+let resultado = salario == 100 ? "Salario Certo" : " Salario Errado";
+
+console.log(resultado);
+
+let usuario = "fiap";
+let userLogado = usuario == "fiap" ? "Logado com Sucesso" : "Usuário Errado"
+console.log(userLogado)
+
+function verificarParImpar(numero){
+    return numero % 2  === 0 ? "Par" : "Impar";
+}
+console.log(verificarParImpar())
