@@ -140,7 +140,6 @@
 // }
 
 // //ternario
-
 // let salario = 100;
 // let resultado = salario == 100 ? "Salario Certo" : " Salario Errado";
 
@@ -166,7 +165,6 @@ for(let i = 1; i <= 5; i++)
 
 // for para array
 const linguagens = ["Java", "Python", "C#"];
-
 for(let i = 0; i < linguagens.length; i++)
 {
     console.log("Linguaguem", i, ":", linguagens[i])
@@ -182,3 +180,46 @@ const carros = {marca:"Volks", modelo:"Fusca", ano:1980}
 for(let dados in carros){
     console.log(dados, ":", carros[dados])
 }
+
+// While - diferete do for o while não sbaemos a quantidade de vezes que o código vai executar
+let i = 1;
+while(i < 5){
+    console.log("contagem",i);
+    i++;
+}
+
+// Declaração de variável indefinida
+// let numero;
+
+// while(numero !== "0"){
+// numero = prompt("Digite um número (ou zero para sair)");
+// console.log("eu sei o que você digitou:", numero);
+// }
+// console.log("Fim do programa")
+
+//Do-While (Executa ao menos uma vez) -
+let contador =10;
+do{
+    console.log("vai executar pelo menos uma vez");
+    contador++;
+}while(contador <=5);
+
+//declaração da variável undefined
+let palpite;
+//gerar um número aleatório entre 1 e 10
+const sorteio = Math.floor(Math.random() *10)+1;
+
+do{
+    palpite = parseInt(prompt("Digite um número entre 1 e 10"));
+
+    if(isNaN(palpite)){
+        alert("Saindo do jogo")
+        break;
+    }
+    if(palpite !== sorteio){
+        alert("Você perdeu R$ 100,00")
+    }
+}while(palpite !== sorteiro)5
+    if(palpite === sorterio){
+        alert("Parabéns, você acertou e ganhou R$ 100,00")
+    }    
